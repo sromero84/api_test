@@ -45,5 +45,3 @@ class Size(models.Model):
     ## methods ##
     def __unicode__(self):
         return u'%s' % self.name
-
-from .signals import *
