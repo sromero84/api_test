@@ -14,6 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
 from django.conf.urls import include, url
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from tastypie.api import Api
 from scratchers.api import ScratcherResource, SizeResource
@@ -27,4 +29,4 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^scratchers/', include('scratchers.urls', namespace='scratchers')),
     url(r'^api/', include(v1_api.urls, namespace='api')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
