@@ -1,0 +1,37 @@
+[
+{
+  "fields": {
+    "name": "XS"
+  },
+  "model": "scratchers.size",
+  "pk": 1
+},
+{
+  "fields": {
+    "name": "S"
+  },
+  "model": "scratchers.size",
+  "pk": 2
+},
+{
+  "fields": {
+    "name": "M"
+  },
+  "model": "scratchers.size",
+  "pk": 3
+},
+{
+  "fields": {
+    "name": "L"
+  },
+  "model": "scratchers.size",
+  "pk": 4
+},
+{
+  "fields": {
+    "name": "XL"
+  },
+  "model": "scratchers.size",
+  "pk": 5
+}
+]
