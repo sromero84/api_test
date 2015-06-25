@@ -22,7 +22,7 @@ class Scratcher(models.Model):
         string if no sizes are set.
         """
         if self.item_sizes is not None:
-            return ','.join(map(lambda x: unicode(x), self.item_sizes.all()))
+            return ', '.join(map(lambda x: unicode(x), self.item_sizes.all()))
         else:
             return ''
 
